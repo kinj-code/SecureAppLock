@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Core Permissions -->
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_INSTALLED_APPS" />
+    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
+
+    <!-- Launcher Specific -->
+    <uses-permission android:name="android.permission.BIND_APPWIDGET" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_SENSOR_PRIVACY" />
+
+    <!-- Sensor for 3D Parallax -->
+    <uses-permission android:name="android.permission.SENSOR" />
+    <uses-feature android:name="android.hardware.sensor.accelerometer" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SecureAppLockLauncher"
+        android:usesCleartextTraffic="false"
+        tools:targetApi="35">
+
+        <!-- Home Screen Activity -->
+        <activity
+            android:name=".ui.HomeScreenActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- App Drawer Activity -->
+        <activity
+            android:name=".ui.AppDrawerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Settings Activity -->
+        <activity
+            android:name=".ui.LauncherSettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Authentication Activity -->
+        <activity
+            android:name=".ui.LauncherAuthActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Vault Activity (Hidden Apps) -->
+        <activity
+            android:name=".ui.VaultActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Widget Configuration Activity -->
+        <activity
+            android:name=".widget.WidgetConfigActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Display Title -->
+    <TextView
+        android:id="@+id/display_title"
+        style="@style/Typography.Display.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SecureAppLock"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Heading Subtitle -->
+    <TextView
+        android:id="@+id/heading_subtitle"
+        style="@style/Typography.Heading.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Advanced Launcher"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Body Description -->
+    <TextView
+        android:id="@+id/body_description"
+        style="@style/Typography.Body.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Secure, customizable, and powerful launcher with multi-screen support and gesture customization."
+        android:layout_marginBottom="24dp" />
+
+    <!-- Section Heading -->
+    <TextView
+        android:id="@+id/section_heading"
+        style="@style/Typography.Subheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Features"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Body Item 1 -->
+    <TextView
+        android:id="@+id/body_item_1"
+        style="@style/Typography.Body.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔐 Biometric Authentication"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Body Item 2 -->
+    <TextView
+        android:id="@+id/body_item_2"
+        style="@style/Typography.Body.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎨 Customizable Themes"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Caption -->
+    <TextView
+        android:id="@+id/caption_text"
+        style="@style/Typography.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last updated: 2026-06-20"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Overline Label -->
+    <TextView
+        android:id="@+id/overline_label"
+        style="@style/Typography.Overline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Advanced Settings"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Decorative Header -->
+    <TextView
+        android:id="@+id/decorative_header"
+        style="@style/Typography.Decorative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Premium Experience"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Monospace Code Display -->
+    <TextView
+        android:id="@+id/monospace_text"
+        style="@style/Typography.Monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="com.secureapplock.launcher"
+        android:background="#F5F5F5"
+        android:padding="8dp" />
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Display/Hero Typography (Large Titles) -->
+    <style name="Typography.Display" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:letterSpacing">-0.02</item>
+    </style>
+
+    <!-- Large Display Title -->
+    <style name="Typography.Display.Large" parent="Typography.Display">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Medium Display Title -->
+    <style name="Typography.Display.Medium" parent="Typography.Display">
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <!-- Small Display Title -->
+    <style name="Typography.Display.Small" parent="Typography.Display">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <!-- Heading Typography -->
+    <style name="Typography.Heading" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:lineSpacingMultiplier">1.3</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <!-- Large Heading -->
+    <style name="Typography.Heading.Large" parent="Typography.Heading">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <!-- Medium Heading -->
+    <style name="Typography.Heading.Medium" parent="Typography.Heading">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <!-- Small Heading -->
+    <style name="Typography.Heading.Small" parent="Typography.Heading">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- Subheading Typography -->
+    <style name="Typography.Subheading" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:lineSpacingMultiplier">1.4</item>
+    </style>
+
+    <!-- Body Text Typography -->
+    <style name="Typography.Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:lineSpacingMultiplier">1.5</item>
+        <item name="android:letterSpacing">0.015</item>
+    </style>
+
+    <!-- Large Body Text -->
+    <style name="Typography.Body.Large" parent="Typography.Body">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Medium Body Text -->
+    <style name="Typography.Body.Medium" parent="Typography.Body">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Small Body Text -->
+    <style name="Typography.Body.Small" parent="Typography.Body">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Caption Typography (Small descriptive text) -->
+    <style name="Typography.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+        <item name="android:lineSpacingMultiplier">1.4</item>
+        <item name="android:letterSpacing">0.03</item>
+    </style>
+
+    <!-- Overline Typography (All caps labels) -->
+    <style name="Typography.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+        <item name="android:letterSpacing">0.15</item>
+    </style>
+
+    <!-- Label Typography (Button labels, small text) -->
+    <style name="Typography.Label" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <!-- Monospace Typography (Code, numbers) -->
+    <style name="Typography.Monospace" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/roboto_mono</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:lineSpacingMultiplier">1.6</item>
+    </style>
+
+    <!-- Decorative Typography (Special headers) -->
+    <style name="Typography.Decorative" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/playfair_display</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <!-- Light/Thin Typography -->
+    <style name="Typography.Light" parent="Typography.Body">
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+        <item name="android:fontFeatureSettings">liga off</item>
+    </style>
+</resources>

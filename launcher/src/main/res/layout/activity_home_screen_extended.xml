@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Tab Layout for Screen Pages -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary" />
+
+    <!-- ViewPager2 for Multi-Screen Support -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Parallax Background with Home Screen Grid -->
+    <com.secureapplock.launcher.ui.view.Parallax3DView
+        android:id="@+id/parallax_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <GridLayout
+            android:id="@+id/home_screen_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="4"
+            android:rowCount="6"
+            android:padding="16dp" />
+
+    </com.secureapplock.launcher.ui.view.Parallax3DView>
+
+    <!-- Status Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/lock_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔓 Layout Lock: OFF"
+            android:textSize="14sp"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/toggle_lock_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toggle Lock" />
+
+    </LinearLayout>
+
+</LinearLayout>
